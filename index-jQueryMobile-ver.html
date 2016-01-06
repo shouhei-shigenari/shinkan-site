@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -9,19 +10,38 @@
 </head>
 <body>
   <!-- ぺージ -->
-  <div data-role="page">
+  <div id="home" data-role="page">
  <!-- ヘッダー -->
     <div data-role="header">
-     <h1>タイトル</h1>
+     <h1>メニュー</h1>
     </div>
  <!-- コンテンツ -->
     <div data-role="content">
      コンテンツ
     </div>
+    <div role="main" class="ui-content">
+      <button class="ui-btn">練習風景</button>
+      <a href="#sub" class="ui-btn">リンク</a>
+    </div>
  <!-- フッター -->
    <div data-role="footer">
-     <h4>フッター</h4>
+     <h4>(C) 2016 L'oeuf. All rights reserved.</h4>
    </div>
  </div>
+
+ <div id="sub" data-role="page">
+<!-- ヘッダー -->
+   <div data-role="header">
+    <h1>メニュー</h1>
+   </div>
+<!-- コンテンツ -->
+   <div data-role="content">
+    リンク先デス
+   </div>
+<!-- フッター -->
+  <div data-role="footer">
+    <h4>(C) 2016 L'oeuf. All rights reserved.</h4>
+  </div>
+</div>
 </body>
 </html>
